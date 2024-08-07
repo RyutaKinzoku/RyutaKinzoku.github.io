@@ -13,9 +13,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Dynamic project loading
 const projects = [
-    { name: "Project 1", description: "Description of project 1." },
-    { name: "Project 2", description: "Description of project 2." },
-    // Add more projects here
+    { name: "Concasa's AI-Powered Real Estate Chatbot", description: "Erica, an advanced chatbot designed to assist potential homebuyers at Concasa. Leveraging Python, Flask, and cutting-edge AI technologies such as GPT-3 and GPT-4, Erica provides intelligent and informative responses to customer inquiries. The chatbot effectively integrates with multiple platforms through APIs, including Meta's Graph API, Gmail API, and HubSpot API. Employed Agile methodologies with Scrum and Jira to optimize development, planning, and quality assurance. You can try it messaging to this links https://wa.me/50688482272 or https://www.facebook.com/concasa?locale=es_LA" },
+    { name: "Game Jam+ Costa Rica 2022 - A Costa Rican Horror Story", description: "A 2D survival horror game as part of the Memento Factory team. Leveraging Unity and C#, helped create a suspenseful atmosphere based on Costa Rican folklore. Focused on puzzle-solving and resource management gameplay within a labyrinthine environment." },
+    
 ];
 
 function loadProjects() {
