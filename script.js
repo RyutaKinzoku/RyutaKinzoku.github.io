@@ -1,6 +1,6 @@
 // script.js
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links (only for hash links)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -20,20 +20,20 @@ const projects = [
 
 function loadProjects() {
     const projectsSection = document.getElementById('projects');
-    projectsSection.innerHTML = '<h2>Projects</h2>'; // Clear existing content
+    if (projectsSection) {
+        projectsSection.innerHTML = '<h2>Projects</h2>'; // Clear existing content
 
-    projects.forEach(project => {
-        const projectElement = document.createElement('div');
-        projectElement.className = 'project';
-        projectElement.innerHTML = `
-            <h3>${project.name}</h3>
-            <p>${project.description}</p>
-        `;
-        projectsSection.appendChild(projectElement);
-    });
+        projects.forEach(project => {
+            const projectElement = document.createElement('div');
+            projectElement.className = 'project';
+            projectElement.innerHTML = `
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+            `;
+            projectsSection.appendChild(projectElement);
+        });
+    }
 }
 
 // Call loadProjects when the page loads
 window.addEventListener('load', loadProjects);
-
-// You can add more functions here as needed
