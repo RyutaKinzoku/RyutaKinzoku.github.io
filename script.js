@@ -37,14 +37,21 @@ const projects = [
 function loadProjects() {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
-        projectsSection.innerHTML = '<h2>Projects</h2>'; // Clear existing content
-
         projects.forEach(project => {
             const projectElement = document.createElement('div');
             projectElement.className = 'project';
+            
+            let linksHtml = '';
+            if (project.links && project.links.length > 0) {
+                linksHtml = '<div class="project-links">' +
+                    project.links.map(link => `<a href="${link.url}" target="_blank">${link.text}</a>`).join(' | ') +
+                    '</div>';
+            }
+
             projectElement.innerHTML = `
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
+                ${linksHtml}
             `;
             projectsSection.appendChild(projectElement);
         });

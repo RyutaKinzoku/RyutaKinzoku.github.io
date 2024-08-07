@@ -71,6 +71,20 @@ a:hover {
     text-decoration: underline;
 }
 
+.project-links {
+    margin-top: 10px;
+}
+
+.project-links a {
+    color: #03dac6;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
     nav ul {
