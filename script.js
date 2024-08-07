@@ -19,7 +19,7 @@ const projects = [
         links: [
             {text: "Press Release", url: "https://www.larepublica.net/noticia/talento-tico-desarrolla-asistente-inmobiliaria-con-base-en-inteligencia-artificial"},
             {text: "Live Demo WhatsApp", url: "https://wa.me/50688482272"},
-            {text: "Live Demo Facebook Messenger", url: "https://www.facebook.com/concasa?locale=es_LA"}
+            {text: "Live Demo Facebook Messenger", url: "https://m.me/concasa"}
         ]
     },
     { 
